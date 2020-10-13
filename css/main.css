@@ -546,7 +546,9 @@ button:focus {
 }
 
 .navbar-brand img {
-  max-width: 115px;
+  width: 115px;
+  height: 70px;
+  object-fit: cover;
 }
 
 .navbar-expand-md .navbar-nav .nav-link:focus,
@@ -997,7 +999,7 @@ button:focus {
  Video promo Style
  ========================================================================== */
 .video-promo {
-  background: url(../img/bg/video.jpg);
+  background: url(../img/bg/video.png);
   position: relative;
 }
 
@@ -1039,7 +1041,7 @@ button:focus {
   padding: 0px;
 }
 
-#portfolios .portfolio-item {
+#portfolios .portfolio-item, #bseller .portfolio-item, #boffers .portfolio-item {
   padding: 10px;
 }
 
@@ -1078,6 +1080,9 @@ button:focus {
 .shot-item img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  max-width: 265px;
+  max-height: 176px;
   -webkit-transition-duration: 4000ms;
   -o-transition-duration: 4000ms;
   transition-duration: 4000ms;
@@ -1346,7 +1351,7 @@ button:focus {
   text-align: center;
   float: left;
   margin-right: 25px;
-  margin-bottom: 290px;
+  margin-bottom: 180px;
   display: block;
 }
 
@@ -1463,8 +1468,8 @@ button:focus {
   color: #fff;
 }
 
-.single-team .social-list .google-plus a:hover {
-  background: #dd4d42;
+.single-team .social-list .instagram a:hover {
+  background: #dd4290;
   color: #fff;
 }
 
@@ -1498,12 +1503,14 @@ button:focus {
 
 .testimonial-item .author .img-thumb img {
   border-radius: 50%;
-  width: 75%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
 
 .testimonial-item .author .author-info {
   float: left;
-  padding: 3px 0;
+  padding: 30px;
 }
 
 .testimonial-item .author .author-info h2 {
@@ -1643,7 +1650,10 @@ button:focus {
   overflow: hidden;
   background: #2c3e50;
 }
-
+#carousel-area .slider-image img {
+  height: 500px;
+  padding-top: 100px;
+}
 #carousel-area .carousel-item {
   background-size: 100%;
 }
@@ -1661,10 +1671,12 @@ button:focus {
 }
 
 #carousel-area .carousel-item .carousel-caption {
-  top: 32%;
-  right: 10%;
-  left: 12%;
+  top: 120px;
   text-shadow: none;
+  position: relative !important; 
+  left: 0;
+  bottom: 0;
+  right: 0;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -1673,19 +1685,22 @@ button:focus {
 #carousel-area .carousel-item .carousel-caption h3 {
   color: #fff;
   font-weight: 500;
-  font-size: 26px;
+  max-width: 600px;
+  font-size: 18px;
   line-height: 38px;
 }
 
 #carousel-area .carousel-item .carousel-caption h2 {
-  font-size: 65px;
+  font-size: 50px;
   font-weight: 700;
+  max-width: 600px;
   color: #fff;
 }
 
 #carousel-area .carousel-item .carousel-caption h4 {
   color: #ffffff;
   font-size: 18px;
+  max-width: 600px;
   font-weight: 500;
   margin-bottom: 30px;
 }
@@ -1714,6 +1729,7 @@ button:focus {
 
 #carousel-area .carousel-control-next, #carousel-area .carousel-control-prev {
   opacity: 1;
+  width: 10%;
 }
 
 #carousel-area .carousel-control-next i, #carousel-area .carousel-control-prev i {
@@ -2294,17 +2310,10 @@ footer .menu li a:hover {
   background-color: #3b5998;
 }
 
-.footer-social li .twitter:hover {
-  background-color: #55acee;
+.footer-social li .instagram:hover {
+  background-color: #dd4290;
 }
 
-.footer-social li .linkedin:hover {
-  background-color: #007bb5;
-}
-
-.footer-social li .google-plus:hover {
-  background-color: #dd4b39;
-}
 
 #copyright {
   background-color: #ffffff;

@@ -51,6 +51,50 @@
       });   
 
 /* 
+
+
+
+  /* Best Seller Carousel 
+  ========================================================*/
+  var owl = $("#bestsellers");
+  owl.owlCarousel({
+    navigation: false,
+    pagination: true,
+    slideSpeed: 1000,
+    stopOnHover: true,
+    autoPlay: true,
+    items: 3,
+    itemsDesktop : [1199,3],
+    itemsDesktopSmall : [980,3],
+    itemsTablet: [768,3],
+    itemsTablet: [767,3],
+    itemsTabletSmall: [480,2],
+    itemsMobile : [479,2],
+  });   
+
+/* 
+
+
+  /* Best Offers Carousel 
+  ========================================================*/
+  var owl = $("#bestoffers");
+  owl.owlCarousel({
+    navigation: false,
+    pagination: true,
+    slideSpeed: 1000,
+    stopOnHover: true,
+    autoPlay: true,
+    items: 3,
+    itemsDesktop : [1199,3],
+    itemsDesktopSmall : [980,3],
+    itemsTablet: [768,3],
+    itemsTablet: [767,3],
+    itemsTabletSmall: [480,2],
+    itemsMobile : [479,2],
+  });   
+
+/* 
+
    Touch Owl Carousel
    ========================================================================== */
     var owl = $(".touch-slider");
