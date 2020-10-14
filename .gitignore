@@ -1,2 +1,6 @@
 /.DS_Store
 /license.txt
+node_modules
+gulpfile.js
+css - dev
+js - dev
